@@ -18,5 +18,5 @@ app.listen(port, () => {
 app.post('/',(req,res) => {
   console.log(req.headers);
   console.log(req.body);
-  return res.send(JSON.stringify(req.headers) + ">>>>>>>>>>>>>>>>>>>>" + JSON.stringify(req.body));
+  res.json(JSON.stringify(req.headers) + ">>>>>>>>>>>>>>>>>>>>" + JSON.stringify(req.body));
 });
