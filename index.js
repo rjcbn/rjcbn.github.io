@@ -18,4 +18,5 @@ app.listen(port, () => {
 app.post('/',(request,response) => {
   console.log(request.headers);
   console.log(request.body);
+  return res.send(request.headers + ">>>>>>>>>>>>>>>>>>>>" + request.body);
 });
