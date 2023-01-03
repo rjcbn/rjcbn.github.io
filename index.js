@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   res.send('Testing availability...');
+  console.log("Testing console...")
 });
 
 app.listen(port, () => {
