@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
   console.log("Testing console...");
 });
 
+app.use(express.json({ type: ['text/*', '*/json'] }));
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
