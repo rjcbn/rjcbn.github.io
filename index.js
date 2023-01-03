@@ -15,8 +15,8 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
 
-app.post('/',(request,response) => {
-  console.log(request.headers);
-  console.log(request.body);
-  return res.send(request.headers + ">>>>>>>>>>>>>>>>>>>>" + request.body);
+app.post('/',(req,res) => {
+  console.log(req.headers);
+  console.log(req.body);
+  return res.send(req.headers + ">>>>>>>>>>>>>>>>>>>>" + req.body);
 });
